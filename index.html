@@ -1,0 +1,57 @@
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified Materialize CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Base 64 Converter</title>
+</head>
+
+<body class="blue darken-3">
+
+    <h3 class="white-text center">Base64 Econder - Decoder</h3>
+    <div class="container center white container" style="margin-top:2%;">
+        <div class="row center" style="padding:5%;">
+            <div class="center col s12 m12 l6">
+                <textarea id="text_encode" name="text_encode" onkeyup="changedEncode();" class="materialize-textarea" style="height: 200px;" data-length="120"></textarea>
+                <label for="text_encode">Text Codificado</label>
+                <br>
+                <!-- <a class="waves-effect waves-light btn blue lighten-1" id="btn_encode" onclick="encodeBase()"  style="margin-top:20px;">Codificar</a> -->
+          </div>
+            <div class="center col s12 m12 l6">
+                <textarea id="text_decode"  name="text_decode" onkeyup="changedEncode();" class="materialize-textarea" style="height: 200px;" data-length="120"></textarea>
+                <label for="text_decode">Text Decodificado</label>
+                <br>
+                <!-- <a class="waves-effect waves-light btn blue lighten-1" id="btn_decode" onclick="decodeBase()" style="margin-top:20px;">Decodificar</a>-->
+          </div>
+        </div>
+
+          <div style="margin-top:10px; padding-bottom:5%;" >
+          <h6>Desejo:</h6>
+          <div class="switch">
+            <label>
+              Decodificar
+              <input type="checkbox" id="update" onchange="changedSwitch();">
+              <span class="lever"></span>
+              Codificar
+            </label>
+          </div> 
+    </div>
+        
+    </div>
+    <h6 class="center white-text">Made by: LordzSpectron</h6>
+
+     <!-- Jquery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
+    <!-- Compiled and minified Materialize JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+	<!-- Compiled and minified Materialize JavaScript -->
+    <script type="text/javascript" src="js/custom.js"></script>
+	
+	
+</body>
+
+</html>
